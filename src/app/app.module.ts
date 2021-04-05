@@ -13,13 +13,16 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
+import { ContentComponent } from './content/content.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SliderComponent
+    SliderComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { SliderComponent } from './slider/slider.component';
     MatTabsModule,
     NgbModule,
     NgbPaginationModule, 
-    NgbAlertModule
+    NgbAlertModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
