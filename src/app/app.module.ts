@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { ContentComponent } from './content/content.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {MatCardModule} from '@angular/material/card';
     NgbModule,
     NgbPaginationModule, 
     NgbAlertModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
