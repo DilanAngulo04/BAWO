@@ -6,8 +6,20 @@
     padding-bottom: 2%;
 }
 
-mat-card{
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
+.card-padding{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.center-button{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+.abs-center {
+display: flex;
+align-items: center;
+justify-content: center;
 }
  

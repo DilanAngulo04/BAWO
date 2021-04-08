@@ -17,6 +17,7 @@ import { ContentComponent } from './content/content.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
+import { DialogInfoProductComponent } from './product/dialog-info-product/dialog-info-product.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatDividerModule} from '@angular/material/divider';
     HeaderComponent,
     FooterComponent,
     SliderComponent,
-    ContentComponent
+    ContentComponent,
+    DialogInfoProductComponent
   ],
   imports: [
     BrowserModule,
