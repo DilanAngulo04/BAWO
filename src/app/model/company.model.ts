@@ -1,17 +1,17 @@
 export class company{
-    constructor(public codCompanyu?: number,
-        public nameCompany?: string,
+    constructor(public codigo?: number,
+        public nombre?: string,
         public vision?: string,
         public mision?: string,
-        public history?: string,
-        public phoneOne?: string,
-        public phoneTwo?: string,
-        public email?: string,
-        public adresse?: string,
-        public facebookLink?: string,
-        public instagramLink?: string,
-        public whatsappLink?: string,
-        public url_logo?: string){
+        public historia?: string,
+        public telefono1?: string,
+        public telefono2?: string,
+        public correo?: string,
+        public direccion?: string,
+        public facebook?: string,
+        public instagram?: string,
+        public whatsapp?: string,
+        public urlLogo?: string){
 
     }
 }

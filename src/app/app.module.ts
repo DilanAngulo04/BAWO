@@ -17,7 +17,11 @@ import { ContentComponent } from './content/content.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
-import { DialogInfoProductComponent } from './product/dialog-info-product/dialog-info-product.component';
+import { ProductService } from './service/product.service';
+import { CompanyService } from './service/company.service';
+import { ImageService } from './service/image.service';
+import { CategoryService } from './service/category.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,8 +29,7 @@ import { DialogInfoProductComponent } from './product/dialog-info-product/dialog
     HeaderComponent,
     FooterComponent,
     SliderComponent,
-    ContentComponent,
-    DialogInfoProductComponent
+    ContentComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +43,10 @@ import { DialogInfoProductComponent } from './product/dialog-info-product/dialog
     NgbAlertModule,
     MatCardModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductService, CompanyService, ImageService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

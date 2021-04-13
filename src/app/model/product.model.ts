@@ -1,13 +1,13 @@
 import { Image } from "./image.model";
 
 export class Product{
-    constructor(public cod?: number,
-        public nameProduc?: string,
-        public priceProduct?: number,
-        public nutritionalInfoProduct?: string,
-        public descriptionProduct?: string,
-        public imageProduct?: Image,
-        public codCategory?: number){    
+    constructor(public codigo?: number,
+        public nombre?: string,
+        public precio?: number,
+        public informacionNutricional?: string,
+        public descripcion?: string,
+        public imagen?: Image,
+        public categoria?: number){    
 
     }
 }
