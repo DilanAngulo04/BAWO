@@ -12,7 +12,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FooterComponent } from './footer/footer.component';
-import { SliderComponent } from './slider/slider.component';
 import { ContentComponent } from './content/content.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -22,13 +21,13 @@ import { CompanyService } from './service/company.service';
 import { ImageService } from './service/image.service';
 import { CategoryService } from './service/category.service';
 import { HttpClientModule } from '@angular/common/http';
+import { TalleresService } from './service/talleres.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SliderComponent,
     ContentComponent
   ],
   imports: [
@@ -46,7 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatDividerModule,
     HttpClientModule
   ],
-  providers: [ProductService, CompanyService, ImageService, CategoryService],
+  providers: [ProductService, CompanyService, ImageService, CategoryService, TalleresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,4 @@
+import { category } from "./category.model";
 import { Image } from "./image.model";
 
 export class Product{
@@ -7,7 +8,6 @@ export class Product{
         public informacionNutricional?: string,
         public descripcion?: string,
         public imagen?: Image,
-        public categoria?: number){    
-
+        public categoria?: category){    
     }
 }

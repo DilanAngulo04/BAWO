@@ -14,10 +14,9 @@ export class ImageService {
   getAllImages(): Observable<Image[]> {
     const url:string = this.url + "view/AllImages";
     return this.http.get<Image[]>(url);
-    console.log(url);
   }
 
-  getProductById(imageId: string): Observable<Image> {
+  getImageById(imageId: string): Observable<Image> {
     return this.http.get<Image>(this.url + "/image/findById/" + imageId);
   }
 

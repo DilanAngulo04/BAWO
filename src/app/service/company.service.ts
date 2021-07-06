@@ -17,4 +17,10 @@ export class CompanyService {
     console.log(url);
   }
 
+ 
+  getCompanyInfo(): Observable<company> {
+    const url:string = this.url + "view/AllCompanies";
+    return this.http.get<company>(url);
+  }
+
 }
